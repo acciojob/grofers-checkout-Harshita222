@@ -23,11 +23,6 @@ totalElement.textContent = "Total: Rs " + totalPrice;
 
 // Append total price element to the body
 document.body.appendChild(totalElement)
-  // Get the table
-   const table = document.querySelector("table");
-
-  // // Append the new row to the table
-   table.appendChild(newRow);
 };
 
 getSumBtn.addEventListener("click", getSum);
