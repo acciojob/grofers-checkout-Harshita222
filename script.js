@@ -15,7 +15,7 @@ document.body.appendChild(getSumBtn);
 
 const getSum = () => {
   // Select all elements with the class "price"
-  const priceElements = document.querySelectorAll(".price");
+  const priceElements = document.querySelectorAll(".prices");
 
   let totalPrice = 0;
 
