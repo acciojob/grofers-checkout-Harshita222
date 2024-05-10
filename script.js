@@ -1,10 +1,9 @@
-
 const getSumBtn = document.createElement("button");
 getSumBtn.append("Get Total Price");
 document.body.appendChild(getSumBtn);
 
 const getSum = () => {
-  // Select all elements with the class "price"
+  // Select all elements with the class "prices"
   const priceElements = document.querySelectorAll(".prices");
 
   let totalPrice = 0;
@@ -15,14 +14,13 @@ const getSum = () => {
     totalPrice += parseInt(priceElement.textContent);
   });
 
-  // Create a new row for total price
-   Create a new element for total price
-const totalElement = document.createElement("div");
-totalElement.id = "ans"; // Set the id to "ans"
-totalElement.textContent = "Total: Rs " + totalPrice;
+  // Create a new element for total price
+  const totalElement = document.createElement("div");
+  totalElement.id = "ans"; // Set the id to "ans"
+  totalElement.textContent = "Total: Rs " + totalPrice;
 
-// Append total price element to the body
-document.body.appendChild(totalElement)
+  // Append total price element to the body
+  document.body.appendChild(totalElement);
 };
 
 getSumBtn.addEventListener("click", getSum);
