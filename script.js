@@ -1,13 +1,3 @@
-// const getSumBtn = document.createElement("button");
-// getSumBtn.append("Get Total Price");
-// document.body.appendChild(getSumBtn);
-
-// const getSum = () => {
-// //Add your code here
-  
-// };
-
-// getSumBtn.addEventListener("click", getSum);
 
 const getSumBtn = document.createElement("button");
 getSumBtn.append("Get Total Price");
@@ -26,23 +16,18 @@ const getSum = () => {
   });
 
   // Create a new row for total price
-  const newRow = document.createElement("tr");
+   Create a new element for total price
+const totalElement = document.createElement("div");
+totalElement.id = "ans"; // Set the id to "ans"
+totalElement.textContent = "Total: Rs " + totalPrice;
 
-  // Create a cell for total price
-  const totalCell = document.createElement("td");
-  totalCell.textContent = "Total: Rs " + totalPrice;
-
-  // Set colspan attribute to span the cell across two columns
-  totalCell.setAttribute("colspan", "2");
-
-  // Append total price cell to the new row
-  newRow.appendChild(totalCell);
-
+// Append total price element to the body
+document.body.appendChild(totalElement)
   // Get the table
-  const table = document.querySelector("table");
+   const table = document.querySelector("table");
 
-  // Append the new row to the table
-  table.appendChild(newRow);
+  // // Append the new row to the table
+   table.appendChild(newRow);
 };
 
 getSumBtn.addEventListener("click", getSum);
